@@ -12,10 +12,20 @@ describe("Task 1", () => {
       const response = await getTask1("Riz@z RISO00tto!");
       expect(response.body).toStrictEqual({ msg: "Rizz Risotto" });
     });
-
+  
     it("example2", async () => {
       const response = await getTask1("alpHa-alFRedo");
       expect(response.body).toStrictEqual({ msg: "Alpha Alfredo" });
+    });
+
+    it("example3", async () => {
+      const response = await getTask1("___cHIckEN    riCe");
+      expect(response.body).toStrictEqual({ msg: "Chicken Rice" });
+    });
+
+    it("example4", async () => {
+      const response = await getTask1("chIckEn   ___ SaNdwich");
+      expect(response.body).toStrictEqual({ msg: "Chicken Sandwich" });
     });
 
     it("error case", async () => {
