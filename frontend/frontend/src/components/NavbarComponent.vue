@@ -45,6 +45,7 @@ const toggleLogo = () => {
     padding: 4px 16px ;
     padding-right: 16px;
     align-items: center;
+    z-index: 100; 
 }
 .logo {
     display: grid;

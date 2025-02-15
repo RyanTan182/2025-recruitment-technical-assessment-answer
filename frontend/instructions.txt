@@ -1,0 +1,16 @@
+Apologies for the additional folder for frontend, so here are the steps 
+to launch the example page
+
+1. Once you 'cd frontend', enter 'cd frontend' another time to make sure there are 
+two frontend folders 
+
+eg. ..\..\2025-recruitment-technical-assessment-answer\frontend\frontend
+
+2. Run 'npm i' to install the libraries/dependencies needed
+
+3. Run 'npm run dev' to launch the dev page
+
+
+Created with VueJS+Vite 
+
+♡ from Ryan Tan ㋡

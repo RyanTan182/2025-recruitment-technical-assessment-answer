@@ -36,7 +36,7 @@
     },
     {
       "name": "Civil Engineering Building",
-      "rooms_available": 8,
+      "rooms_available": 0,
       "building_picture": "./civilBuilding.webp"
     },
     {

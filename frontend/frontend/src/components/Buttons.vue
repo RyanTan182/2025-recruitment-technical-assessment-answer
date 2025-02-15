@@ -1,15 +1,25 @@
 <script setup>
+import { ref } from 'vue';
+
+const onClickDropdwon = ref(true);
+
+const toggleDropdown = () => {
+    onClickDropdwon.value = !onClickDropdwon.value;
+};
+
 </script>
 
 <template>
 <div class="freeRoom-page">
     <div class="buttons">
-        <div class="filter-button">
+        <div class="filter-button" @click="toggleDropdown">
             <button>
                 <img src="../assets/filter.svg" alt="Filter Icon"/>
                 <h3> Filters</h3>
             </button>
-            
+            <div class="filter-dropdown" v-if="onClickDropdwon">
+                
+            </div>
         </div>
     <div class="search-bar">
         <form action="">
@@ -142,7 +152,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .buttons {
     display: flex;
     flex-direction: column;
